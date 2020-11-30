@@ -1,0 +1,80 @@
+/*Button Status*/
+.maroma-button {
+  font-family: "Noto Sans KR", "Nunito Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  display: inline-block;
+}
+.maroma-button--primary {
+  color: #232527;
+  background-color: #ffc847;
+}
+.maroma-button--Disabled {
+  color: #b4b8bc;
+  background-color: #dee2e6;
+}
+.maroma-button--Blank {
+  color: #6e7175;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+}
+.maroma-button--Dark {
+  color: #4c5154;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+}
+
+/*Button Font Color*/
+.maroma-button--blackFont {
+  color: #232527;
+}
+.maroma-button--darkFont {
+  color: #4c5154;
+}
+.maroma-button--grayFont {
+  color: #6e7175;
+}
+.maroma-button--primaryFont {
+  color: #ff6d6f;
+}
+.maroma-button--whiteFont {
+  color: #ffffff;
+}
+
+/*Button Size*/
+.maroma-button--tiny {
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+.maroma-button--Small {
+  font-size: 14px;
+  padding: 10px 30px;
+  border-radius: 8px;
+}
+.maroma-button--Medium {
+  font-size: 16px;
+  padding: 10px 52px;
+  border-radius: 8px;
+}
+.maroma-button--Large {
+  font-size: 16px;
+  padding: 14px 79px;
+  border-radius: 8px;
+}
+.maroma-button--Giant {
+  font-size: 16px;
+  padding: 18px 169px;
+  border-radius: 8px;
+}
+
+/*Button Border*/
+.maroma-button--Border {
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+.maroma-button--noBorder {
+  border: none;
+}

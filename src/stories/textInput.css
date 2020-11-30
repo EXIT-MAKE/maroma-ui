@@ -1,0 +1,132 @@
+/*Wrapping Element*/
+.maroma-form-group {
+  display: flex;
+  flex-direction: column;
+  font-family: "Noto Sans KR", "Nunito Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+}
+
+/*Lable Message*/
+.maroma-form-label--mobile {
+  padding-bottom: 8px;
+  font-weight: 700;
+  color: #232527;
+  line-height: 21px;
+}
+.maroma-form-label--small {
+  padding-bottom: 8px;
+  font-weight: 700;
+  color: #6e7175;
+  line-height: 21px;
+}
+.maroma-form-label--medium {
+  padding-bottom: 8px;
+  font-weight: 700;
+  color: #6e7175;
+  line-height: 21px;
+}
+.maroma-form-label--large {
+  padding-bottom: 8px;
+  font-weight: 700;
+  color: #6e7175;
+  line-height: 21px;
+}
+
+/*Hlep Message*/
+.maroma-form-help--default {
+  margin-top: 2px;
+  margin-left: 8px;
+  color: #8c9094;
+  font-size: 12px;
+}
+.maroma-form-input--default:focus {
+  border: 1px solid #3584df;
+  outline: none;
+  box-shadow: 3px 3px 0px 0px #bad1f4, -3px -3px 0px 0px #bad1f4,
+    3px -3px 0px 0px #bad1f4, -3px 3px 0px 0px #bad1f4;
+}
+.maroma-form-help--focus {
+  display: block;
+  margin-top: 2px;
+  margin-left: 8px;
+  color: #8c9094;
+  font-size: 12px;
+}
+.maroma-form-help--focus:after {
+  display: none;
+}
+.maroma-form-help--disabled {
+  margin-top: 2px;
+  margin-left: 8px;
+  color: #8c9094;
+  font-size: 12px;
+}
+.maroma-form-help--error {
+  content: "error";
+  margin-top: 2px;
+  margin-left: 8px;
+  color: #d93925;
+  font-size: 12px;
+}
+
+/*Input Status*/
+.maroma-form-input {
+  padding-left: 12px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #232527;
+  border: 1px solid #dee2e6;
+}
+
+.maroma-form-input::placeholder {
+  color: #b4b8bc;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.maroma-form-input--mobile {
+  width: 327px;
+  height: 56px;
+}
+.maroma-form-input--small {
+  width: 242px;
+  height: 32px;
+}
+.maroma-form-input--medium {
+  width: 378px;
+  height: 40px;
+}
+.maroma-form-input--large {
+  width: 480px;
+  height: 40px;
+}
+
+/*Input*/
+.maroma-form-input--error {
+  border: 1px solid #d93925;
+}
+.maroma-form-input--focus {
+  border: 1px solid #3584df;
+  box-shadow: 3px 3px 0px 0px #bad1f4, -3px -3px 0px 0px #bad1f4,
+    3px -3px 0px 0px #bad1f4, -3px 3px 0px 0px #bad1f4;
+}
+.maroma-form-input--focus:focus {
+  outline: none;
+}
+.maroma-form-input--disabled {
+  color: #8c9094;
+  border: 1px solid #dee2e6;
+  background-color: #edf0f3;
+  cursor: not-allowed;
+}
+
+.maroma-form-input--error::placeholder {
+  color: #d93925;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
