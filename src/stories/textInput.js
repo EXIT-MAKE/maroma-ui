@@ -5,7 +5,7 @@ import "./textInput.css";
 /**
  * Primary UI component for user interaction
  */
-export const textInput = ({
+export const TextInput = ({
   status,
   label,
   size,
@@ -15,28 +15,32 @@ export const textInput = ({
   helpMessage,
   ...props
 }) => {
-  const mode = status ? "maroma-form--default" : "maroma-form--disabled";
+  const mode = status
+    ? "maroma-textInput--default"
+    : "maroma-textInput--disabled";
   return (
-    <div className="maroma-form-group">
-      <label className={[`maroma-form-label--${size}`]}>{label}</label>
+    <div className="maroma-textInput-group">
+      <label className={[`maroma-textInput-label--${size}`]}>{label}</label>
       <input
         type="text"
         className={[
-          "maroma-form-input",
-          `maroma-form-input--${status}`,
-          `maroma-form-input--${size}`,
+          "maroma-textInput-input",
+          `maroma-textInput-input--${status}`,
+          `maroma-textInput-input--${size}`,
           mode,
         ].join(" ")}
         style={backgroundColor && { backgroundColor }}
         placeholder={[`${placeholder}`]}
         {...props}
       />
-      <span className={[`maroma-form-help--${status}`]}>{helpMessage}</span>
+      <span className={[`maroma-textInput-help--${status}`]}>
+        {helpMessage}
+      </span>
     </div>
   );
 };
 
-Form.propTypes = {
+TextInput.propTypes = {
   /**
    * Is this the principal call to action on the page?
    */
@@ -53,7 +57,7 @@ Form.propTypes = {
   onClick: PropTypes.func,
 };
 
-Form.defaultProps = {
+TextInput.defaultProps = {
   /*backgroundColor: null,*/
   status: "default",
   size: "medium",

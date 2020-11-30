@@ -1,5 +1,5 @@
 /*Wrapping Element*/
-.maroma-form-group {
+.maroma-textInput-group {
   display: flex;
   flex-direction: column;
   font-family: "Noto Sans KR", "Nunito Sans", "Helvetica Neue", Helvetica, Arial,
@@ -10,25 +10,25 @@
 }
 
 /*Lable Message*/
-.maroma-form-label--mobile {
+.maroma-textInput-label--mobile {
   padding-bottom: 8px;
   font-weight: 700;
   color: #232527;
   line-height: 21px;
 }
-.maroma-form-label--small {
+.maroma-textInput-label--small {
   padding-bottom: 8px;
   font-weight: 700;
   color: #6e7175;
   line-height: 21px;
 }
-.maroma-form-label--medium {
+.maroma-textInput-label--medium {
   padding-bottom: 8px;
   font-weight: 700;
   color: #6e7175;
   line-height: 21px;
 }
-.maroma-form-label--large {
+.maroma-textInput-label--large {
   padding-bottom: 8px;
   font-weight: 700;
   color: #6e7175;
@@ -36,35 +36,35 @@
 }
 
 /*Hlep Message*/
-.maroma-form-help--default {
+.maroma-textInput-help--default {
   margin-top: 2px;
   margin-left: 8px;
   color: #8c9094;
   font-size: 12px;
 }
-.maroma-form-input--default:focus {
+.maroma-textInput-input--default:focus {
   border: 1px solid #3584df;
   outline: none;
   box-shadow: 3px 3px 0px 0px #bad1f4, -3px -3px 0px 0px #bad1f4,
     3px -3px 0px 0px #bad1f4, -3px 3px 0px 0px #bad1f4;
 }
-.maroma-form-help--focus {
+.maroma-textInput-help--focus {
   display: block;
   margin-top: 2px;
   margin-left: 8px;
   color: #8c9094;
   font-size: 12px;
 }
-.maroma-form-help--focus:after {
+.maroma-textInput-help--focus:after {
   display: none;
 }
-.maroma-form-help--disabled {
+.maroma-textInput-help--disabled {
   margin-top: 2px;
   margin-left: 8px;
   color: #8c9094;
   font-size: 12px;
 }
-.maroma-form-help--error {
+.maroma-textInput-help--error {
   content: "error";
   margin-top: 2px;
   margin-left: 8px;
@@ -73,7 +73,7 @@
 }
 
 /*Input Status*/
-.maroma-form-input {
+.maroma-textInput-input {
   padding-left: 12px;
   border-radius: 8px;
   background-color: #ffffff;
@@ -81,50 +81,50 @@
   border: 1px solid #dee2e6;
 }
 
-.maroma-form-input::placeholder {
+.maroma-textInput-input::placeholder {
   color: #b4b8bc;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
 }
 
-.maroma-form-input--mobile {
+.maroma-textInput-input--mobile {
   width: 327px;
   height: 56px;
 }
-.maroma-form-input--small {
+.maroma-textInput-input--small {
   width: 242px;
   height: 32px;
 }
-.maroma-form-input--medium {
+.maroma-textInput-input--medium {
   width: 378px;
   height: 40px;
 }
-.maroma-form-input--large {
+.maroma-textInput-input--large {
   width: 480px;
   height: 40px;
 }
 
 /*Input*/
-.maroma-form-input--error {
+.maroma-textInput-input--error {
   border: 1px solid #d93925;
 }
-.maroma-form-input--focus {
+.maroma-textInput-input--focus {
   border: 1px solid #3584df;
   box-shadow: 3px 3px 0px 0px #bad1f4, -3px -3px 0px 0px #bad1f4,
     3px -3px 0px 0px #bad1f4, -3px 3px 0px 0px #bad1f4;
 }
-.maroma-form-input--focus:focus {
+.maroma-textInput-input--focus:focus {
   outline: none;
 }
-.maroma-form-input--disabled {
+.maroma-textInput-input--disabled {
   color: #8c9094;
   border: 1px solid #dee2e6;
   background-color: #edf0f3;
   cursor: not-allowed;
 }
 
-.maroma-form-input--error::placeholder {
+.maroma-textInput-input--error::placeholder {
   color: #d93925;
   font-weight: 400;
   font-size: 14px;
