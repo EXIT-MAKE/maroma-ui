@@ -1,0 +1,170 @@
+.maroma-textArea-group {
+  display: flex;
+  flex-direction: column;
+  font-family: "Noto Sans KR", "Nunito Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+}
+
+textarea {
+  display: flex;
+  flex-direction: column;
+  font-family: "Noto Sans KR", "Nunito Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+}
+
+@keyframes inputFocus-focus {
+  from {
+    border: 1px solid #dee2e6;
+  }
+  to {
+    border: 0.5px solid #3584df;
+    box-shadow: 1px 1px 0px 3px #bad1f4, -1px -1px 0px 3px #bad1f4,
+      1px -1px 0px 3px #bad1f4, -1px 1px 0px 3px #bad1f4;
+  }
+}
+
+@keyframes inputFocus-not {
+  from {
+    border: 0.3px solid #3584df;
+    box-shadow: 1px 1px 0px 3px #bad1f4, -1px -1px 0px 3px #bad1f4,
+      1px -1px 0px 3px #bad1f4, -1px 1px 0px 3px #bad1f4;
+  }
+  to {
+    border: 1px solid #dee2e6;
+  }
+}
+
+@keyframes inputFocusError-focus {
+  from {
+    border: 1px solid #d93925;
+  }
+  to {
+    border: 0.3px solid #d93a2559;
+    box-shadow: 1px 1px 0px 3px #d93a2559, -1px -1px 0px 3px #d93a2559,
+      1px -1px 0px 3px #d93a2559, -1px 1px 0px 3px #d93a2559;
+  }
+}
+
+@keyframes inputFocusError-not {
+  from {
+    border: 0.3px solid #d93a2559;
+    box-shadow: 1px 1px 0px 3px #d93a2559, -1px -1px 0px 3px #d93a2559,
+      1px -1px 0px 3px #d93a2559, -1px 1px 0px 3px #d93a2559;
+  }
+  to {
+    border: 1px solid #d93925;
+  }
+}
+
+.maroma-textArea-label--mobile {
+  display: none;
+}
+.maroma-textArea-label--small,
+.maroma-textArea-label--medium,
+.maroma-textArea-label--large {
+  display: flex;
+  margin-bottom: 4px;
+  color: #6e7175;
+}
+
+.maroma-textArea-count--small,
+.maroma-textArea-count--medium,
+.maroma-textArea-count--large {
+  display: none;
+}
+
+.maroma-textArea-count-group {
+  width: 327px;
+  height: 10px;
+}
+
+.maroma-textArea-count--mobile {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  color: #8b8b8b;
+}
+
+.maroma-textArea-input--mobile::placeholder {
+  position: absolute;
+  font-family: "Noto Sans KR", "Nunito Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  color: #c1c1c1;
+}
+
+.maroma-textArea-input--small::placeholder,
+.maroma-textArea-input--medium::placeholder,
+.maroma-textArea-input--large::placeholder {
+  font-family: "Noto Sans KR", "Nunito Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  color: #c1c1c1;
+}
+
+.maroma-textArea-input--mobile,
+.maroma-textArea-input--small,
+.maroma-textArea-input--medium,
+.maroma-textArea-input--large {
+  resize: none;
+  position: relative;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.maroma-textArea-input--mobile {
+  padding: 16px 8px;
+  width: 327px;
+  height: 128px;
+}
+.maroma-textArea-input--small {
+  padding: 12px 8px;
+  width: 242px;
+  height: 112px;
+}
+.maroma-textArea-input--medium {
+  padding: 12px 8px;
+  width: 378px;
+  height: 106px;
+}
+.maroma-textArea-input--large {
+  padding: 12px 8px;
+  width: 480px;
+  height: 106px;
+}
+
+.maroma-textArea-input--disabled {
+  background-color: #edf0f3;
+  color: #8c9094;
+  border: 1px solid #dee2e6;
+}
+
+.maroma-textArea-input:focus {
+  outline: none;
+}
+
+.maroma-textArea-input--focus {
+  border: 1px solid #3584df;
+  box-shadow: 3px 3px 0px 0px #bad1f4, -3px -3px 0px 0px #bad1f4,
+    3px -3px 0px 0px #bad1f4, -3px 3px 0px 0px #bad1f4;
+}
+.maroma-textArea-input--error {
+  border: 1px solid #d93925;
+}
+.maroma-textArea-input--error::placeholder {
+  color: #d93925;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
