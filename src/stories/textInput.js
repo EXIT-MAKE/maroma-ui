@@ -42,18 +42,28 @@ export const TextInput = ({
 
 TextInput.propTypes = {
   /**
-   * Is this the principal call to action on the page?
+   * 상태에 따른 종류
    */
   status: PropTypes.oneOf(["default", "focus", "disabled", "error"]),
-
+  /**
+   * 사이즈에 따른 종류
+   */
   size: PropTypes.oneOf(["mobile", "small", "medium", "large"]),
-
+  /**
+   * Label 이름 입력
+   */
   label: PropTypes.string.isRequired,
-
+  /**
+   * 도움말 메세지 입력
+   */
   helpMessage: PropTypes.string.isRequired,
-
+  /**
+   * Placeholder 메세지 입력
+   */
   placeholder: PropTypes.string.isRequired,
-
+  /**
+   * 클릭 이벤트 종류
+   */
   onClick: PropTypes.func,
 };
 
