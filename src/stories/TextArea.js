@@ -46,7 +46,7 @@ TextArea.propTypes = {
   /**
    * 상태에 따른 종류
    */
-  status: PropTypes.oneOf(["default", "focus", "disabled", "error"]),
+  status: PropTypes.oneOf(["default", "focus", "disabled", "error", "valid"]),
   /**
    * 사이즈에 따른 종류
    */

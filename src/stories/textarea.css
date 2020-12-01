@@ -131,23 +131,25 @@ textarea {
 .maroma-textArea-input--small {
   padding: 12px 8px;
   width: 242px;
-  height: 112px;
+  height: 102px;
 }
 .maroma-textArea-input--medium {
   padding: 12px 8px;
   width: 378px;
-  height: 106px;
+  height: 102px;
 }
 .maroma-textArea-input--large {
   padding: 12px 8px;
   width: 480px;
-  height: 106px;
+  height: 102px;
 }
 
 .maroma-textArea-input--disabled {
   background-color: #edf0f3;
   color: #8c9094;
   border: 1px solid #dee2e6;
+  outline: none;
+  caret-color: transparent;
 }
 
 .maroma-textArea-input:focus {
@@ -163,7 +165,53 @@ textarea {
   border: 1px solid #d93925;
 }
 .maroma-textArea-input--error::placeholder {
-  color: #d93925;
+  color: #232527;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.maroma-textArea-input--error:focus {
+  outline: none;
+  animation-name: inputFocusError-focus;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.maroma-textArea-input--error:not(:focus) {
+  outline: none;
+  animation-name: inputFocusError-not;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.maroma-textArea-input--default:focus {
+  animation-name: inputFocus-focus;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  border: 1px solid #3584df;
+  outline: none;
+  box-shadow: 3px 3px 0px 0px #bad1f4, -3px -3px 0px 0px #bad1f4,
+    3px -3px 0px 0px #bad1f4, -3px 3px 0px 0px #bad1f4;
+}
+
+.maroma-textArea-input--default:not(:focus) {
+  animation-name: inputFocus-not;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  outline: none;
+}
+
+.maroma-textArea-input--disabled {
+  outline: none;
+  cursor: not-allowed;
+}
+
+.maroma-textArea-input--valid {
+  border: 1px solid #20ba45;
+}
+.maroma-textArea-input--valid::placeholder {
+  color: #232527;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;

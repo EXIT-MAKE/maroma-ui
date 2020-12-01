@@ -189,12 +189,33 @@
   border: 1px solid #dee2e6;
   background-color: #edf0f3;
   cursor: not-allowed;
+  outline: none;
+  caret-color: transparent;
 }
 .maroma-textInput-input--error {
   border: 1px solid #d93925;
 }
 .maroma-textInput-input--error::placeholder {
-  color: #d93925;
+  color: #232527;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.maroma-textInput-input--valid {
+  border: 1px solid #20ba45;
+}
+
+.maroma-textInput-help--valid {
+  content: "error";
+  margin-top: 2px;
+  margin-left: 8px;
+  color: #20ba45;
+  font-size: 12px;
+}
+
+.maroma-textInput-input--valid::placeholder {
+  color: #232527;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
