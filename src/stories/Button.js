@@ -36,11 +36,11 @@ export const Button = ({
 
 Button.propTypes = {
   /**
-   * Is this the principal call to action on the page?
+   * 상태에 따른 버튼 종류
    */
   status: PropTypes.oneOf(["Primary", "Blank", "Disabled", "Dark", "Gray"]),
   /**
-   * What background color to use
+   * 배경 색상 종류
    */
   backgroundColor: PropTypes.oneOf([
     "Primary",
@@ -49,8 +49,8 @@ Button.propTypes = {
     "Dark",
     "Gray",
   ]),
-  /*
-   * How large should the button be?
+  /**
+   * 폰트 색상 종류
    */
   fontcolor: PropTypes.oneOf([
     "blackFont",
@@ -59,13 +59,16 @@ Button.propTypes = {
     "primaryFont",
     "whiteFont",
   ]),
+  /**
+   * 버튼 사이즈 선택
+   */
   size: PropTypes.oneOf(["Tiny", "Small", "Medium", "Large", "Giant"]),
   /**
-   * Button contents
+   * 버튼에 들어가는 내용 입력
    */
   label: PropTypes.string.isRequired,
   /**
-   * Optional click handler
+   * Border 유무 선택
    */
   border: PropTypes.oneOf(["Border", "noBorder"]),
 
