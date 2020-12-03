@@ -1,16 +1,16 @@
 import React from "react";
 
-import { ToolTip } from "./ToolTip";
+import { ToolTipHor } from "./ToolTipHor";
 
 export default {
-  title: "MAROMA/ToolTip",
-  component: ToolTip,
+  title: "MAROMA/ToolTipHor",
+  component: ToolTipHor,
   argTypes: {
     backgroundColor: { control: "color" },
   },
 };
 
-const Template = (args) => <ToolTip {...args} />;
+const Template = (args) => <ToolTipHor {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {

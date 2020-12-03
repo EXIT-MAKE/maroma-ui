@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./tooltip.css";
+import "./tooltiphor.css";
 
 /**
  * Primary UI component for user interaction
  */
-export const ToolTip = ({ status, text, ...props }) => {
+export const ToolTipHor = ({ status, text, ...props }) => {
   const mode = status ? "tooltip-tip1--primary" : "tooltip-tip1--dark";
   return (
     <div className="tooltip">
@@ -17,7 +17,7 @@ export const ToolTip = ({ status, text, ...props }) => {
   );
 };
 
-ToolTip.propTypes = {
+ToolTipHor.propTypes = {
   /**
    * 툴팁의 내용
    */
@@ -30,7 +30,7 @@ ToolTip.propTypes = {
   onClick: PropTypes.func,
 };
 
-ToolTip.defaultProps = {
+ToolTipHor.defaultProps = {
   /*backgroundColor: null,*/
   status: "primary",
   text: "Tooltip!",
