@@ -1,0 +1,96 @@
+/*Radio*/
+.maroma-radio-group {
+  font-family: "Noto Sans KR", "Nunito Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.maroma-radio {
+  display: flex;
+  align-items: center;
+}
+.maroma-radio input[type="radio"] {
+  display: none;
+  width: 10px;
+  height: 10px;
+  margin: 5px 5px;
+}
+
+.maroma-radio-label {
+  position: relative;
+  display: flex;
+  margin: 2px 0px 1px 0px;
+  cursor: pointer;
+}
+
+.maroma-radio-label::before {
+  content: "";
+  border: 10px solid #222;
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  margin: 0px 4px 0px 0px;
+  border-radius: 50%;
+}
+.maroma-radio-label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  margin: 6px 6px 6px 6px;
+  background-color: black;
+  border-radius: 50%;
+  transition: all ease-out 0.11s;
+}
+
+input[type="radio"] + label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  margin: 6px 6px 6px 6px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + label::after {
+  background-color: white;
+}
+
+input[type="radio"]:checked + label::before {
+  border: 1px solid #b4b8bc;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+}
+
+input[type="radio"]:checked + .maroma-radio-label {
+  color: #8c9094;
+}
+/*
+.maroma-radio-outercircle {
+  height: 20px;
+  width: 20px;
+  margin: 2px;
+  background-color: #232527;
+  box-sizing: border-box;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+}
+.maroma-radio-innercircle {
+  height: 8px;
+  width: 8px;
+  margin: 8px 8px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+}
+.maroma-radio-box input[type="radio"]:checked {
+  background-color: brown;
+}
+*/

@@ -1,0 +1,15 @@
+.label-group {
+  font-family: "Noto Sans KR", "Nunito Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 22px;
+}
+
+.label-box {
+  font-size: 14px;
+  padding: 5px 26px;
+  color: #ffffff;
+  background: #ff6d6f;
+  border-radius: 44px;
+}

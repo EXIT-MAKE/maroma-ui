@@ -1,4 +1,4 @@
-/*Button Status*/
+/*Button*/
 .maroma-button {
   font-family: "Noto Sans KR", "Nunito Sans", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
@@ -7,6 +7,7 @@
   text-align: center;
   display: inline-block;
 }
+/*Button Status*/
 .maroma-button--primary {
   color: #232527;
   background-color: #ffc847;

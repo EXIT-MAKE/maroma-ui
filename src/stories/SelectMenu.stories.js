@@ -15,23 +15,23 @@ const Template = (args) => <SelectMenu {...args} />;
 export const Mobile = Template.bind({});
 Mobile.args = {
   status: "unchecked",
-  label: "Label",
+  label: "비활성화",
 };
 
 export const Small = Template.bind({});
 Small.args = {
   status: "unchecked",
-  label: "Label",
+  label: "비활성화",
 };
 
 export const Medium = Template.bind({});
 Medium.args = {
   status: "unchecked",
-  label: "Label",
+  label: "비활성화",
 };
 
 export const Large = Template.bind({});
 Large.args = {
   status: "default",
-  label: "Label",
+  label: "비활성화",
 };

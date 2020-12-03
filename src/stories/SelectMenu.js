@@ -5,48 +5,29 @@ import "./selectmenu.css";
 /**
  * Primary UI component for user interaction
  */
-export const SelectMenu = ({
-  status,
-  label,
-  roundness,
-  labeling,
-  ...props
-}) => {
-  const mode = status
-    ? "maroma-selectmenu--default"
-    : "maroma-selectmenu--disabled";
+export const SelectMenu = ({ title, option, status, ...props }) => {
+  const mode = status ? "maroma-select--default" : "maroma-select--disabled";
   return (
-    <div className="maroma-selectmenu-group">
-      <div class="maroma-selectmenu">
-        <input
-          type="selectmenu"
-          className={[
-            `maroma-selectmenu--${status}`,
-            `maroma-selectmenu--${roundness}`,
-            mode,
-          ]}
-        />
-      </div>
-      <div className="">
-        <label className="maroma-selectmenu-label">{label}</label>
-      </div>
+    <div className="maroma-select-group">
+      <select className={["maroma-select", mode]} id="selectmenu">
+        <option selected>Choose...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
     </div>
   );
 };
 
 SelectMenu.propTypes = {
   /**
-   * 상태에 따른 종류
-   */
-  status: PropTypes.oneOf(["unchecked", "ckecked"]),
-  /**
-   * 모양에 따른 종류
-   */
-  roundness: PropTypes.oneOf(["circle", "roundedSquare"]),
-  /**
    * Label 이름 입력
    */
-  label: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  /**
+   * options 이름 입력
+   */
+  option: PropTypes.string.isRequired,
   /**
    * 클릭 이벤트 종류
    */
@@ -57,4 +38,5 @@ SelectMenu.defaultProps = {
   /*backgroundColor: null,*/
   status: "unchecked",
   onClick: undefined,
+  label: "비활성화",
 };
