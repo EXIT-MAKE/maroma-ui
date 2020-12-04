@@ -5,21 +5,16 @@ import "./radio.css";
 /**
  * Primary UI component for user interaction
  */
-export const Radio = ({ label, status, ...props }) => {
-  const mode = label ? "maroma-radio--default" : "maroma-radio--disabled";
+export const Radio = ({ label, ...props }) => {
+  const mode = label ? "radio-box-default" : "radio-box-disabled";
   return (
-    <div className="maroma-radio-group">
-      <label className="maroma-radio">
-        <input
-          name="radioname"
-          type="radio"
-          className={[`maroma-radio-box`]}
-          id="radio1"
-        />
-        <label for="radio1" className={["maroma-radio-label"]}>
+    <div className="radio-group">
+      <div className="radio-form">
+        <input id="radio1" type="radio" className={[`radio-box`, mode]} />
+        <label for="radio1" className="radio-label">
           {label}
         </label>
-      </label>
+      </div>
     </div>
   );
 };
