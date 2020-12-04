@@ -12,8 +12,8 @@ export default {
 
 const Template = (args) => <CheckboxRound {...args} />;
 
-export const example = Template.bind({});
-example.args = {
+export const Main = Template.bind({});
+Main.args = {
   status: "unchecked",
   label: "활성화",
 };

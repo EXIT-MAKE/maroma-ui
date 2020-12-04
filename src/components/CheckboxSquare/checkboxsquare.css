@@ -1,5 +1,5 @@
 /*Checkbox*/
-.maroma-checkbox-rd-group {
+.maroma-checkbox-sq-group {
   font-family: "Noto Sans KR", "Nunito Sans", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
   font-weight: 400;
@@ -12,7 +12,7 @@
   }
   to {
     background-color: #ff6d6f;
-    background-image: url("./static/check_w.svg");
+    background-image: url("/src/static/check_w.svg");
     background-size: 12px 12px;
     background-repeat: no-repeat;
   }
@@ -27,12 +27,12 @@
   }
 }
 
-.maroma-checkbox-rd-form {
+.maroma-checkbox-sq-form {
   display: flex;
   align-items: center;
 }
 
-.maroma-checkbox-rd-form input[type="checkbox"] {
+.maroma-checkbox-sq-form input[type="checkbox"] {
   background-image: none;
   appearance: none;
   cursor: pointer;
@@ -40,33 +40,26 @@
   width: 24px;
   height: 24px;
   padding: 4px;
+  border-radius: 2px;
   background-color: #ffffff;
-  background-image: url("./static/check_g.svg");
-  background-size: 12px 12px;
-  background-repeat: no-repeat;
-  background-position: 49% 49%;
-  border-radius: 50%;
-  border: 1px solid #b4b8bc;
+  border: 1.6px solid #b4b8bc;
 }
 
-.maroma-checkbox-rd-form input[type="checkbox"]:checked:after {
+.maroma-checkbox-sq-form input[type="checkbox"]:checked:after {
   display: block;
 }
 
-.maroma-checkbox-rd-form input[type="checkbox"]:checked {
+.maroma-checkbox-sq-form input[type="checkbox"]:checked {
   animation-name: checkAnimation;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
   background-color: #ff6d6f;
-  background-image: url("./static/check_w.svg");
-  background-size: 12px 12px;
-  background-repeat: no-repeat;
   background-position: 50% 52%;
   color: white;
   border: none;
 }
 
-.maroma-checkbox-rd-label {
+.maroma-checkbox-sq-label {
   cursor: pointer;
   padding-left: 4px;
   padding-bottom: 1px;
