@@ -6,7 +6,7 @@
   font-style: normal;
 }
 
-@keyframes checkAnimation {
+@keyframes checkAnimationBox {
   from {
     background-color: #ffffff;
   }
@@ -54,7 +54,7 @@
 }
 
 .maroma-checkbox-rd-form input[type="checkbox"]:checked {
-  animation-name: checkAnimation;
+  animation-name: checkAnimationBox;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
   background-color: #ff6d6f;

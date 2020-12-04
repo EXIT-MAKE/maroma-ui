@@ -6,7 +6,7 @@
   font-style: normal;
 }
 
-@keyframes checkAnimation {
+@keyframes checkAnimationRad {
   from {
     background-color: #ffffff;
   }
@@ -34,7 +34,7 @@
 }
 
 .radio-form input[type="radio"]:checked {
-  animation-name: checkAnimation;
+  animation-name: checkAnimationRad;
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
   border: none;

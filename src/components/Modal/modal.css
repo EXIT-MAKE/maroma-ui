@@ -1,0 +1,62 @@
+.modal-dialog {
+  font-family: "Noto Sans CJK KR", "Nunito Sans", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  display: flex;
+}
+
+.modal-content {
+  position: absolute;
+  width: 484px;
+  height: 138px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px 32px;
+}
+
+.modal-title {
+  font-size: 20px;
+  margin: 0px 0px 4px 0px;
+}
+
+.modal-body {
+  font-size: 16px;
+  white-space: normal;
+  line-height: 24px;
+  color: #6e7175;
+}
+.modal-body span::before {
+  display: block;
+  content: attr(data-text);
+  background: black;
+  padding: 1px 8px;
+}
+
+.modal-footer {
+  position: fixed;
+  margin: 46px 0px 0px 252px;
+}
+
+.modal-btn1,
+.modal-btn2 {
+  width: 106px;
+  height: 40px;
+  font-size: 14px;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  overflow: hidden;
+}
+
+.modal-btn--primary {
+  background-color: #ffc847;
+  color: #232527;
+}
+
+.modal-btn--secondary {
+  background-color: #edf0f3;
+  color: #4c5154;
+  margin-right: 16px;
+}
