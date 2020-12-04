@@ -9,36 +9,50 @@
 .tooltip-group1 {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
+
 .tooltip-box1--primary {
   position: absolute;
   padding: 6px 8px;
   border-radius: 4px;
-  left: 19px;
+  left: 40px;
+  top: 20px;
   background-color: #fff8e1;
   color: #ff6d6f;
+  white-space: pre-line;
 }
 .tooltip-box1--dark {
   position: absolute;
   padding: 6px 8px;
   border-radius: 4px;
-  left: 19px;
+  left: 40px;
+  top: 20px;
   background-color: #3a3d40;
   color: #ffffff;
+  white-space: pre-line;
 }
-.tooltip-tip1--primary {
+
+.tooltip-tip--primary {
   position: absolute;
-  width: 10px;
-  height: 10px;
-  left: 14px;
   background-color: #fff8e1;
-  transform: rotate(45deg);
-}
-.tooltip-tip1--dark {
-  position: absolute;
   width: 10px;
   height: 10px;
-  left: 14px;
+}
+.tooltip-tip--dark {
+  position: absolute;
   background-color: #3a3d40;
+  width: 10px;
+  height: 10px;
+}
+
+.tolltip-tip--horizontal {
   transform: rotate(45deg);
+  left: 35px;
+  top: 30px;
+}
+.tolltip-tip--vertical {
+  transform: rotate(45deg);
+  left: 55px;
+  top: 15px;
 }
