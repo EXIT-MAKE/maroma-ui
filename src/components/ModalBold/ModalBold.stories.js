@@ -14,8 +14,7 @@ const Template = (args) => <ModalBold {...args} />;
 
 export const Basic = Template.bind({});
 Basic.args = {
-  title: "재발급 완료",
+  title: "재발급완료",
   body: "MAKE2021",
-  button1: "button",
-  button2: "button",
+  button: "확인",
 };

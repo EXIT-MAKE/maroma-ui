@@ -1,10 +1,11 @@
 .tooltip {
-  font-family: "Noto Sans KR", "Nunito Sans", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: "Noto Sans CJK KR", "Nunito Sans", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 18px;
   font-size: 12px;
+  text-align: center;
 }
 .tooltip-group1 {
   display: flex;

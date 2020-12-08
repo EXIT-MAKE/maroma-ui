@@ -8,7 +8,7 @@ import "./label.css";
 export const Label = ({ status, label, ...props }) => {
   const mode = status ? "maroma-button--primary" : "maroma-button--disabled";
   return (
-    <div className="label-group">
+    <div className={mode}>
       <div className="label">
         <span className="label-box">{label}</span>
       </div>
@@ -27,7 +27,6 @@ Label.propTypes = {
 
 Label.defaultProps = {
   /*backgroundColor: null,*/
-  status: false,
   label: "Maromav",
   onClick: undefined,
 };

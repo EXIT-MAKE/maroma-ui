@@ -1,0 +1,190 @@
+.modal-inputarea-group {
+  display: flex;
+  flex-direction: column;
+  font-family: "Noto Sans CJK KR", "Nunito Sans", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+}
+
+@keyframes closeHover {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 50%;
+  }
+}
+
+@keyframes buttonHover {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 80%;
+  }
+}
+
+@keyframes inputFocus-focus {
+  from {
+    border: 1px solid #dee2e6;
+  }
+  to {
+    border: 0.5px solid #3584df;
+    box-shadow: 1px 1px 0px 3px #bad1f4, -1px -1px 0px 3px #bad1f4,
+      1px -1px 0px 3px #bad1f4, -1px 1px 0px 3px #bad1f4;
+  }
+}
+
+@keyframes inputFocus-not {
+  from {
+    border: 0.3px solid #3584df;
+    box-shadow: 1px 1px 0px 3px #bad1f4, -1px -1px 0px 3px #bad1f4,
+      1px -1px 0px 3px #bad1f4, -1px 1px 0px 3px #bad1f4;
+  }
+  to {
+    border: 1px solid #dee2e6;
+  }
+}
+
+.modal-inputarea-group {
+  width: 544px;
+  height: 419px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.modal-inputarea-header {
+  display: flex;
+  margin-left: 32px;
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal-inputarea-header-title {
+  color: #232527;
+}
+
+.modal-inputarea-header-close {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: #ffffff;
+  background-image: url("/src/static/modal_close.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  margin: 0px 12px 0px auto;
+  cursor: pointer;
+  outline: none;
+}
+
+.modal-inputarea-header-close:hover {
+  animation-name: closeHover;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.modal-inputarea-header-line {
+  border-bottom: 1px solid #dee2e6;
+  margin-top: 12px;
+}
+
+.modal-inputarea-body1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 28px;
+  margin-bottom: 24px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.modal-inputarea-body2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  margin-bottom: 52px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.modal-inputarea-body1 input[type="text"]:focus {
+  animation-name: inputFocus-focus;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.modal-inputarea-body1 input[type="text"]:not(:focus) {
+  animation-name: inputFocus-not;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.modal-inputarea-label1 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  color: #6e7175;
+  margin-bottom: 8px;
+}
+
+.modal-inputarea-input1 {
+  width: 378px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.modal-inputarea-label2 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  color: #6e7175;
+  margin-bottom: 8px;
+}
+
+.modal-inputarea-input2 {
+  width: 480px;
+  height: 102px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+}
+
+.modal-inputarea-input::placeholder {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  color: #b4b8bc;
+}
+
+.modal-inputarea-buttons {
+  margin-top: auto;
+  margin-right: 32px;
+  margin-left: 406px;
+}
+
+.modal-inputarea-buttons:hover {
+  animation-name: buttonHover;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.modal-inputarea-button {
+  border: none;
+  background-color: #ffc847;
+  border-radius: 8px;
+  padding-top: 9.5px;
+  padding-right: 27px;
+  padding-bottom: 7.5px;
+  padding-left: 27px;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}

@@ -2,8 +2,8 @@
 .maroma-textInput-group {
   display: flex;
   flex-direction: column;
-  font-family: "Noto Sans KR", "Nunito Sans", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: "Noto Sans CJK KR", "Nunito Sans", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: left;

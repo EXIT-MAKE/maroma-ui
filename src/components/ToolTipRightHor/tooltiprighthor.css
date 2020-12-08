@@ -1,0 +1,56 @@
+.tooltip-right-center-group {
+  display: flex;
+  flex-direction: column;
+  font-family: "Noto Sans CJK KR", "Nunito Sans", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.tooltip-right-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip-right-center-tip--primary {
+  background-color: #fff8e1;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  text-align: center;
+}
+
+.tooltip-right-center-tip--dark {
+  background-color: #3a3d40;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+}
+
+.tooltip-right-center-box--primary {
+  margin: 0 -7px;
+  font-size: 12px;
+  background-color: #fff8e1;
+  color: #ff6d6f;
+  text-align: center;
+  border-radius: 4px;
+  padding: 6px 8px;
+  white-space: pre-line;
+}
+
+.tooltip-right-center-box--dark {
+  font-size: 12px;
+  background-color: #3a3d40;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 6px 8px;
+  white-space: pre-line;
+}
+
+.tooltip-right-center-tip--horizontal {
+}
+.tooltip-right-center-tip--vertical {
+  transform: rotate(45deg);
+}

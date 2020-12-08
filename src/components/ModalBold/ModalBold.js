@@ -11,34 +11,18 @@ export const ModalBold = ({
   secondary,
   title,
   body,
-  button1,
-  button2,
+  button,
   ...props
 }) => {
   const mode = kind ? "modalbold-body--normal" : "modalbold-body--bold";
   return (
-    <div className="modalbold-dialog modalbold-dialog-centered">
+    <div className="modalbold-group">
       <div className="modalbold-content">
-        <div className="modalbold-header">
-          <h5 className="modalbold-title" id="ModalTitle">
-            {title}
-          </h5>
-        </div>
-        <div
-          className={["modalbold-body", `modalbold-body--${body}`, mode].join(
-            " "
-          )}
-        >
-          {body}
-        </div>
-        <div className="modalbold-footer">
-          <button
-            type="button"
-            className={["modalbold-btn1", "modalbold-btn--primary", mode].join(
-              " "
-            )}
-          >
-            {button2}
+        <div className="modalbold-header">{title}</div>
+        <div className="modalbold-body">{body}</div>
+        <div className="modalbold-button">
+          <button type="button" className="modalbold-button-primary">
+            {button}
           </button>
         </div>
       </div>
@@ -59,6 +43,8 @@ ModalBold.propTypes = {
 
 ModalBold.defaultProps = {
   /*backgroundColor: null,*/
-  body: "body text area",
+  title: "재발급완료",
+  body: "MAKE2021",
+  button: "확인",
   onClick: undefined,
 };

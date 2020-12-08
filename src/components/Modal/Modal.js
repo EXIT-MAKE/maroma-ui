@@ -17,27 +17,15 @@ export const Modal = ({
 }) => {
   const mode = kind ? "modal-body--normal" : "modal-body--bold";
   return (
-    <div className="modal-dialog modal-dialog-centered">
+    <div className="modal-group">
       <div className="modal-content">
-        <div className="modal-header">
-          <h5 className="modal-title" id="ModalTitle">
-            {title}
-          </h5>
-        </div>
-        <div className={["modal-body", `modal-body--${body}`, mode].join(" ")}>
-          {body}
-        </div>
-        <div className="modal-footer">
-          <button
-            type="button"
-            className={["modal-btn1", "modal-btn--secondary", mode].join(" ")}
-          >
+        <div className="modal-header">{title}</div>
+        <div className="modal-body">{body}</div>
+        <div className="modal-button">
+          <button type="button" className="modal-button-secondary">
             {button1}
           </button>
-          <button
-            type="button"
-            className={["modal-btn2", "modal-btn--primary", mode].join(" ")}
-          >
+          <button type="button" className="modal-button-primary">
             {button2}
           </button>
         </div>

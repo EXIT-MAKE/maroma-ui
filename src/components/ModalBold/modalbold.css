@@ -1,67 +1,43 @@
-.modalbold-dialog {
+.modalbold-group {
   font-family: "Noto Sans CJK KR", "Nunito Sans", "Helvetica Neue", Helvetica,
     Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
-  text-align: left;
-  display: flex;
 }
 
 .modalbold-content {
-  position: absolute;
-  width: 484px;
-  height: 138px;
-  background: #ffffff;
-  border-radius: 12px;
+  width: 480px;
+  height: auto;
   padding: 24px 32px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.modalbold-title {
-  font-weight: normal;
+.modalbold-header {
   font-size: 18px;
-  line-height: 27px;
+  font-weight: normal;
   color: #4c5154;
-  margin: 0px 0px 12px 0px;
+  margin-bottom: 12px;
 }
 
 .modalbold-body {
-  font-weight: 700;
-  font-style: normal;
   font-size: 28px;
-  line-height: 41px;
-  white-space: normal;
-  line-height: 24px;
+  font-weight: bold;
+}
+
+.modalbold-button-primary {
+  font-size: 14px;
   color: #232527;
-}
-.modalbold-body span::before {
-  display: block;
-  content: attr(data-text);
-  background: black;
-  padding: 1px 8px;
-}
-
-.modalbold-footer {
-  position: fixed;
-  margin: 40px 0px 0px 374px;
-}
-
-.modalbold-btn1 {
   width: 106px;
   height: 40px;
-  font-size: 14px;
-  outline: none;
-  border-radius: 8px;
-  border: none;
-  overflow: hidden;
-}
-
-.modalbold-btn--primary {
   background-color: #ffc847;
-  color: #232527;
-}
-
-.modalbold-btn--secondary {
-  background-color: #edf0f3;
-  color: #4c5154;
-  margin-right: 16px;
+  border-radius: 8px;
+  margin-top: 18px;
+  margin-left: 374px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
