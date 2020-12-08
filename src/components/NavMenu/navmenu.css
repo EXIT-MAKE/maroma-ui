@@ -1,0 +1,46 @@
+.topmenu-group {
+  font-family: "Noto Sans CJK KR", "Nunito Sans", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+}
+@keyframes menuHover {
+  from {
+    font-weight: normal;
+  }
+  to {
+    font-weight: bold;
+  }
+}
+
+.topmenu-menu {
+  width: auto;
+  height: 64px;
+  background-color: #ffffff;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+}
+
+.topmenu-menu:hover {
+  animation: menuHover;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.topmenu-title {
+  margin: 20px 24px;
+}
+
+.topmenu-border--active {
+  border: 1.3px solid #ff6d6f;
+  background-color: #ff6d6f;
+}
+
+.topmenu-border--normal {
+  border: 1.5px solid #ffffff;
+  background-color: #ffffff;
+}
