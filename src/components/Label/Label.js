@@ -30,3 +30,5 @@ Label.defaultProps = {
   label: "Maromav",
   onClick: undefined,
 };
+
+export default Label;
