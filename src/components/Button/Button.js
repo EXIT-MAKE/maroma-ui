@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 import "./button.css";
 
 /**
@@ -16,21 +17,24 @@ export const Button = ({
 }) => {
   const mode = status ? "maroma-button--primary" : "maroma-button--disabled";
   return (
-    <button
-      type="button"
-      className={[
-        "maroma-button",
-        `maroma-button--${status}`,
-        `maroma-button--${size}`,
-        `maroma-button--${border}`,
-        `maroma-button--${fontcolor}`,
-        mode,
-      ].join(" ")}
-      style={backgroundColor && { backgroundColor }}
-      {...props}
-    >
-      {label}
-    </button>
+    <div>
+      <asdf></asdf>
+      <button
+        type="button"
+        className={[
+          "maroma-button",
+          `maroma-button--${status}`,
+          `maroma-button--${size}`,
+          `maroma-button--${border}`,
+          `maroma-button--${fontcolor}`,
+          mode,
+        ].join(" ")}
+        style={backgroundColor && { backgroundColor }}
+        {...props}
+      >
+        {label}
+      </button>
+    </div>
   );
 };
 
