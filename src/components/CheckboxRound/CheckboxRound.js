@@ -3,6 +3,10 @@ import PropTypes from "prop-types";
 import "./checkboxround.css";
 import styled, { css, keyframes } from "styled-components";
 
+import checkG from "../../static/check_g.svg";
+import checkW from "../../static/check_w.svg";
+import { findAllByDisplayValue } from "@testing-library/react";
+
 const checkAnimationBox = keyframes`
     from {
     background-color: #ffffff;
@@ -25,6 +29,11 @@ const uncheckAnimation = keyframes`
 }
 `;
 
+const StyledCheckboxGroup = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 const StyledCheckboxRound = styled.input.attrs((props) => ({
   type: "checkbox",
 }))`
@@ -32,7 +41,6 @@ const StyledCheckboxRound = styled.input.attrs((props) => ({
     Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
   display: flex;
   align-items: center;
   appearance: none;
@@ -41,13 +49,33 @@ const StyledCheckboxRound = styled.input.attrs((props) => ({
   width: 24px;
   height: 24px;
   padding: 4px;
-  background: url("/src/static/check_g.svg");
+  background: url(${checkG});
   background-color: #ffffff;
   background-size: 12px 12px;
   background-repeat: no-repeat;
   background-position: 49% 49%;
   border-radius: 50%;
   border: 1px solid #b4b8bc;
+
+  &:checked {
+    background: url(${checkW});
+    background-color: #ff6d6f;
+    background-repeat: no-repeat;
+    background-position: 49% 49%;
+    color: white;
+    border: none;
+  }
+`;
+
+const StyledLabel = styled.div`
+  font-family: "Noto Sans CJK KR", "Nunito Sans", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  padding-bottom: 1px;
+  margin-left: 4px;
+  font-size: 14px;
 `;
 
 /**
@@ -58,18 +86,11 @@ export const CheckboxRound = ({ label, ...props }) => {
     ? "maroma-checkbox-rd--default"
     : "maroma-checkbox-rd--disabled";
   return (
-    <div className="maroma-checkbox-rd-group">
-      <StyledCheckboxRound></StyledCheckboxRound>
-      <div className="maroma-checkbox-rd-form">
-        <input
-          id="checkbox-rd1"
-          type="checkbox"
-          className={[`maroma-checkbox-rd-box`, mode]}
-        />
-        <label for="checkbox-rd1" className="maroma-checkbox-rd-label">
-          {label}
-        </label>
-      </div>
+    <div>
+      <StyledCheckboxGroup>
+        <StyledCheckboxRound></StyledCheckboxRound>
+        <StyledLabel>{label}</StyledLabel>
+      </StyledCheckboxGroup>
     </div>
   );
 };

@@ -14,6 +14,5 @@ const Template = (args) => <CheckboxRound {...args} />;
 
 export const Main = Template.bind({});
 Main.args = {
-  status: "unchecked",
   label: "활성화",
 };
