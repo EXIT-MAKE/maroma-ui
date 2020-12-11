@@ -9,7 +9,7 @@ const checkAnimationBox = keyframes`
   }
   to {
     background-color: #ff6d6f;
-    background-image: url("/src/static/check_w.svg");
+    background-image: url(${checkW});
     background-size: 12px 12px;
     background-repeat: no-repeat;
   }
@@ -48,6 +48,18 @@ const StyledCheckboxRound = styled.input.attrs((props) => ({
   background-position: 49% 49%;
   border-radius: 50%;
   border: 1px solid #b4b8bc;
+
+  &:checked {
+    background-color: #ff6d6f;
+    background-repeat: no-repeat;
+    background-position: 49% 49%;
+    color: white;
+    border: none;
+    animation-name: ${checkAnimationBox};
+    animation-duration: 0.15s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
 `;
 
 /**
